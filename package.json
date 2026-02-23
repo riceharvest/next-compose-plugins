@@ -12,8 +12,8 @@
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "pretest": "npm run build",
-    "test": "jest --coverage lib",
-    "test:watch": "jest --watch lib",
+    "test": "vitest run --passWithNoTests",
+    "test:watch": "vitest",
     "prepack": "rimraf lib/**/__tests__"
   },
   "repository": {
