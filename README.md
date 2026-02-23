@@ -417,4 +417,4 @@ See [vercel/next-plugins](https://github.com/vercel/next-plugins) for a list of 
 
 ## License
 
-[MIT](https://github.com/cyrilwanner/@opensourceframework/next-compose-plugins/blob/master/LICENSE) © Cyril Wanner
+[MIT](https://github.com/cyrilwanner/@opensourceframework/next-compose-plugins/blob/master/LICENSE) © Cyril Wanner\n\n---\n\nMaintained by @opensourceframework in the [monorepo](https://github.com/riceharvest/opensourceframework).
