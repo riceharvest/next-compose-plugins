@@ -31,15 +31,6 @@ While `@opensourceframework/next-compose-plugins` tries to eliminate this case b
 npm install --save @opensourceframework/next-compose-plugins
 ```
 
----
-
-<a href="https://www.creative-tim.com/product/nextjs-material-dashboard-pro/?ref=@opensourceframework/next-compose-plugins"><img src="https://cyrilwanner.github.io/packages/@opensourceframework/next-compose-plugins/assets/material-dashboard.png?v=2" alt="NextJS Material Dashboard" align="right" width="300px"></a>
-<br />
-
-Building a **Dashboard** or **Admin UI**? Or do you want to see a **usage example** of `@opensourceframework/next-compose-plugins` in a real world project? Check out the [NextJS Material Dashboard](https://www.creative-tim.com/product/nextjs-material-dashboard-pro/?ref=@opensourceframework/next-compose-plugins) by our partners [Creative Tim](https://www.creative-tim.com/?ref=@opensourceframework/next-compose-plugins) to get you started.
-
-<br /><br /><br />
-
 ## Usage
 
 ```javascript
@@ -286,10 +277,6 @@ Currently, it contains these values:
 ```
 
 ## Examples
-
-### Real world example
-
-Check out the [NextJS Material Dashboard](https://www.creative-tim.com/product/nextjs-material-dashboard-pro/?ref=@opensourceframework/next-compose-plugins) by our partners [Creative Tim](https://www.creative-tim.com/?ref=@opensourceframework/next-compose-plugins) to see how `@opensourceframework/next-compose-plugins` was used in a real world application.
 
 ### Basic example
 
