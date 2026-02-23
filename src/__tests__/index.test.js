@@ -6,9 +6,9 @@ const PHASE_PRODUCTION_SERVER = 'phase-production-server';
 
 describe('next-compose-plugins', () => {
   it('extends a base config', () => {
-    const plugin1 = jest.fn(nextConfig => ({ ...nextConfig, plugin1: true }));
-    const plugin2 = jest.fn(nextConfig => ({ ...nextConfig, plugin2: true }));
-    const plugin3 = jest.fn(nextConfig => ({ ...nextConfig, plugin3: true }));
+    const plugin1 = vi.fn(nextConfig => ({ ...nextConfig, plugin1: true }));
+    const plugin2 = vi.fn(nextConfig => ({ ...nextConfig, plugin2: true }));
+    const plugin3 = vi.fn(nextConfig => ({ ...nextConfig, plugin3: true }));
 
     const baseConfig = withPlugins([plugin1, plugin2], {
       baseConfig: 'hello',
@@ -33,10 +33,10 @@ describe('next-compose-plugins', () => {
   });
 
   it('passes the current phase to the extended config', () => {
-    const plugin1 = jest.fn(nextConfig => ({ ...nextConfig, plugin1: true }));
-    const plugin2 = jest.fn(nextConfig => ({ ...nextConfig, plugin2: true }));
-    const plugin3 = jest.fn(nextConfig => ({ ...nextConfig, plugin3: true }));
-    const plugin4 = jest.fn(nextConfig => ({ ...nextConfig, plugin4: true }));
+    const plugin1 = vi.fn(nextConfig => ({ ...nextConfig, plugin1: true }));
+    const plugin2 = vi.fn(nextConfig => ({ ...nextConfig, plugin2: true }));
+    const plugin3 = vi.fn(nextConfig => ({ ...nextConfig, plugin3: true }));
+    const plugin4 = vi.fn(nextConfig => ({ ...nextConfig, plugin4: true }));
 
     const baseConfig = withPlugins([
       [plugin1, [PHASE_DEVELOPMENT_SERVER]],
@@ -67,7 +67,7 @@ describe('next-compose-plugins', () => {
   });
 
   it('extends the webpack config', () => {
-    const plugin1 = jest.fn(nextConfig => ({
+    const plugin1 = vi.fn(nextConfig => ({
       ...nextConfig,
       webpack: () => {
         if (nextConfig.webpack) {
@@ -78,7 +78,7 @@ describe('next-compose-plugins', () => {
       },
     }));
 
-    const plugin2 = jest.fn(nextConfig => ({
+    const plugin2 = vi.fn(nextConfig => ({
       ...nextConfig,
       webpack: () => {
         if (nextConfig.webpack) {
