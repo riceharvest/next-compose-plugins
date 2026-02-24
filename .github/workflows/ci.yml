@@ -1,9 +1,9 @@
 name: CI
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   pull_request:
-    branches: [main]
+    branches: [main, master]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +20,9 @@ jobs:
           cache: 'pnpm'
       - name: Install dependencies
         run: pnpm install --no-frozen-lockfile
-      - name: Build
+      - name: Build library
         run: pnpm build
+      - name: Lint
+        run: pnpm lint
       - name: Test
-        run: pnpm test -- --passWithNoTests
+        run: pnpm test
